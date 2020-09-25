@@ -26,7 +26,7 @@ class App extends Component {
     wheelMoving: false,
     wheelTimer: '',
     wheelCompleted: false,
-    interval: 4,
+    interval: 2,
     activeYear: 0,
     santaFlyDuration: 40,
     startClicked: false,
