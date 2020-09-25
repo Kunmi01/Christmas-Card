@@ -1,0 +1,51 @@
+{
+  "name": "christmas-card",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src",
+    "format": "npm run prettier -- --write",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
+    "validate": "npm run lint && npm run prettier -- --list-different",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "core-js": "^2.6.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "shortid": "^2.2.14",
+    "styled-components": "^4.1.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "9.0.0",
+    "eslint": "5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.2",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.14.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ]
+}
